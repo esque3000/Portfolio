@@ -1,0 +1,266 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "uplugin",
+    "type": "object",
+    "properties": {
+        "FileVersion": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+        },
+        "Version": {
+            "type": "integer"
+        },
+        "VersionName": {
+            "type": "string",
+            "pattern": "[0-9]+\\.[0-9]+\\.[0-9]+"
+        },
+        "FriendlyName": {
+            "type": "string"
+        },
+        "Description": {
+            "type": "string"
+        },
+        "Category": {
+            "type": "string"
+        },
+        "CreatedBy": {
+            "type": "string"
+        },
+        "CreatedByURL": {
+            "type": "string"
+        },
+        "DocsURL": {
+            "type": "string"
+        },
+        "MarketplaceURL": {
+            "type": "string"
+        },
+        "SupportURL": {
+            "type": "string"
+        },
+        "EngineVersion": {
+            "type": "string",
+            "pattern": "[0-9]+\\.[0-9]+\\.[0-9]+"
+        },
+        "EditorCustomVirtualPath": {
+            "type": "string"
+        },
+        "SupportedTargetPlatforms": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "SupportedPrograms": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "bIsPluginExtension": {
+            "type": "boolean"
+        },
+        "Modules": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Type": {
+                        "enum": [
+                            "Runtime",
+                            "RuntimeNoCommandlet",
+                            "RuntimeAndProgram",
+                            "CookedOnly",
+                            "UncookedOnly",
+                            "Developer",
+                            "DeveloperTool",
+                            "Editor",
+                            "EditorNoCommandlet",
+                            "EditorAndProgram",
+                            "Program",
+                            "ServerOnly",
+                            "ClientOnly",
+                            "ClientOnlyNoCommandlet"
+                        ]
+                    },
+                    "LoadingPhase": {
+                        "enum": [
+                            "EarliestPossible",
+                            "PostConfigInit",
+                            "PostSplashScreen",
+                            "PreEarlyLoadingScreen",
+                            "PreLoadingScreen",
+                            "PreDefault",
+                            "Default",
+                            "PostDefault",
+                            "PostEngineInit",
+                            "None"
+                        ]
+                    },
+                    "PlatformAllowList": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "PlaformDenyList": {
+                        "type": "string"
+                    },
+                    "TargetAllowList": {
+                        "type": "array",
+                        "items": {
+                            "enum": [
+                                "Unknown",
+                                "Game",
+                                "Server",
+                                "Client",
+                                "Editor",
+                                "Program"
+                            ]
+                        }
+                    },
+                    "TargetDenyList": {
+                        "type": "array",
+                        "items": {
+                            "enum": [
+                                "Unknown",
+                                "Game",
+                                "Server",
+                                "Client",
+                                "Editor",
+                                "Program"
+                            ]
+                        }
+                    },
+                    "TargetConfigurationAllowList": {
+                        "type": "array",
+                        "items": {
+                            "enum": [
+                                "Unknown",
+                                "Debug",
+                                "DebugGame",
+                                "Development",
+                                "Shipping",
+                                "Test"
+                            ]
+                        }
+                    },
+                    "TargetConfigurationDenyList": {
+                        "type": "array",
+                        "items": {
+                            "enum": [
+                                "Unknown",
+                                "Debug",
+                                "DebugGame",
+                                "Development",
+                                "Shipping",
+                                "Test"
+                            ]
+                        }
+                    },
+                    "ProgramAllowList": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "ProgramDenyList": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "AdditionalDependencies": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "HasExplicitPlatforms": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [ "Name", "Type" ]
+            }
+        },
+        "LocalizationTargets": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "LoadingPolicy": {
+                    "enum": [
+                        "Never",
+                        "Always",
+                        "Editor",
+                        "Game",
+                        "PropertyNames",
+                        "ToolTips"
+                    ]
+                }
+            }
+        },
+        "VersePath": {
+            "type": "string"
+        },
+        "VerseScope": {
+            "enum": [
+                "PublicAPI",
+                "InternalAPI",
+                "PublicUser",
+                "InternalUser"
+            ]
+        },
+        "VerseVersion": {
+            "type": "integer"
+        },
+        "EnableVerseAssetReflection": {
+            "type": "boolean"
+        },
+        "EnabledByDefault": {
+            "type": "boolean"
+        },
+        "CanContainContent": {
+            "type":"boolean"
+        },
+        "CanContainVerse": {
+            "type":"boolean"
+        },
+        "NoCode": {
+            "type":"boolean"
+        },
+        "IsBetaVersion": {
+            "type":"boolean"
+        },
+        "IsExperimentalVersion": {
+            "type":"boolean"
+        },
+        "Installed": {
+            "type":"boolean"
+        },
+        "RequiresBuildPlatform": {
+            "type":"boolean"
+        },
+        "Hidden": {
+            "type":"boolean"
+        },
+        "Sealed": {
+            "type":"boolean"
+        },
+        "ExplicitlyLoaded": {
+            "type":"boolean"
+        },
+        "HasExplicitPlatforms": {
+            "type":"boolean"
+        },
+        "CanBeUsedWithUnrealHeaderTool": {
+            "type":"boolean"
+        }
+    },
+    "required": [ "FileVersion" ]
+}

@@ -1,5 +1,37 @@
 [
 	{
+		"file": "C:\\Projects\\Portfolio\\Source\\Portfolio\\Character\\PortfilioCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Projects\\Portfolio\\.vscode\\compileCommands_Default\\Portfolio.1.rsp"
+		],
+		"directory": "C:\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Projects\\Portfolio\\Source\\Portfolio\\Character\\PortfilioCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Projects\\Portfolio\\.vscode\\compileCommands_Default\\Portfolio.1.rsp"
+		],
+		"directory": "C:\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Projects\\Portfolio\\Source\\Portfolio\\Movement\\TraversalMovementComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Projects\\Portfolio\\.vscode\\compileCommands_Default\\Portfolio.1.rsp"
+		],
+		"directory": "C:\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Projects\\Portfolio\\Source\\Portfolio\\Movement\\TraversalMovementComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Projects\\Portfolio\\.vscode\\compileCommands_Default\\Portfolio.1.rsp"
+		],
+		"directory": "C:\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Projects\\Portfolio\\Source\\Portfolio\\Portfolio.Build.cs",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe",
